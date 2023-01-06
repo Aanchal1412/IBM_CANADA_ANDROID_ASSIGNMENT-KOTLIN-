@@ -6,6 +6,11 @@
         <entry key="..\:/Users/aanch/AndroidStudioProjects/RidesKotlin/app/src/main/res/layout/activity_main.xml" value="0.2359375" />
         <entry key="..\:/Users/aanch/AndroidStudioProjects/RidesKotlin/app/src/main/res/layout/fragment_vehicle_details.xml" value="0.25" />
         <entry key="..\:/Users/aanch/AndroidStudioProjects/RidesKotlin/app/src/main/res/layout/vehicle_details.xml" value="0.25" />
+<<<<<<< HEAD
+=======
+        <entry key="..\:/Users/aanch/IBM Assignment/RidesKotlin/app/src/main/res/layout/activity_main.xml" value="0.234375" />
+        <entry key="..\:/Users/aanch/IBM Assignment/RidesKotlin/app/src/main/res/layout/fragment_vehicle_details.xml" value="0.234375" />
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
       </map>
     </option>
   </component>

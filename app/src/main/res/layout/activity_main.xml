@@ -62,7 +62,18 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
     <androidx.recyclerview.widget.RecyclerView
+=======
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sr_vehicles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
             android:id="@+id/rv_vehicle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -70,7 +81,11 @@
         </androidx.recyclerview.widget.RecyclerView>
 
 
+<<<<<<< HEAD
 
+=======
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
 
     <ProgressBar
         android:id="@+id/progressBar"

@@ -17,6 +17,10 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+<<<<<<< HEAD
+=======
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
 import com.example.rideskotlin.databinding.ActivityMainBinding
 import com.google.gson.Gson
 import retrofit2.Call
@@ -37,6 +41,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var vehicle_details_fragment: FrameLayout
     lateinit var progressBar: ProgressBar
     lateinit var toolbar_main_activity: Toolbar
+<<<<<<< HEAD
+=======
+    lateinit var swipeRefreshLayout: SwipeRefreshLayout
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
     var model: List<DataModel> = ArrayList<DataModel>()
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +55,10 @@ class MainActivity : AppCompatActivity() {
 
         rv_vehicle =findViewById(R.id.rv_vehicle)
         progressBar = findViewById(R.id.progressBar)
+<<<<<<< HEAD
+=======
+        swipeRefreshLayout = findViewById(R.id.sr_vehicles)
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
         toolbar_main_activity = findViewById(R.id.toolbar_main_activity)
         vehicle_details_fragment = findViewById(R.id.vehicle_details_fragment)
         setSupportActionBar(toolbar_main_activity)
@@ -57,7 +69,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnVehicle!!.setOnClickListener {
             val1 = binding.et1.text.toString()
             binding.et1!!.addTextChangedListener(textWatcher)
+<<<<<<< HEAD
             if (val1!!.isNotEmpty()) {
+=======
+            if (val1!!.isEmpty() == false) {
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
                 val2 = val1.toInt()
                 showProgress(progressBar)
                 ResponseDetails()
@@ -65,6 +81,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+<<<<<<< HEAD
+=======
+        swipeRefreshLayout!!.setOnRefreshListener {
+            showProgress(progressBar!!)
+            ResponseDetails()
+            swipeRefreshLayout.isRefreshing = false
+            vehiclesAdapter!!.notifyDataSetChanged()
+        }
+
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
     }
 
     private fun ResponseDetails() {
@@ -87,6 +113,10 @@ class MainActivity : AppCompatActivity() {
                         rv_vehicle.layoutManager = LinearLayoutManager(this@MainActivity,LinearLayoutManager.VERTICAL,false)
                         rv_vehicle.setHasFixedSize(true)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
                         vehiclesAdapter =
                             VehiclesAdapter(this@MainActivity, model)
                         rv_vehicle!!.adapter = vehiclesAdapter

@@ -55,6 +55,10 @@ class VehiclesAdapter(
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ced7f2fa29a875f88f36efbc96976e233646e8cb
     interface ItemClickListener {
         fun onItemClick(dataModel: DataModel?, position: Int)
     }
